@@ -1,2 +1,3 @@
-# DownloadPage
-简单的应用下载静态页面，利用javascript判断是否是微信内置浏览器
+# DownloadPage  
+简单的应用下载静态页面，利用javascript判断是否是微信内置浏览器  
+微信内置浏览器不能下载文件，如果网页包含下载链接，可以参考此javascript，判断当前浏览器是否是微信浏览器，是则alert提示，否则跳转下载链接

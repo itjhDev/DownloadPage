@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<style type="text/css">
+body,div{ padding:0; margin:0;}
+img { max-width: 100%;}
+hr{border:1px dashed #e8e8e8;width:90%;height:0}
+.bg{text-align: center;}
+.title{font-size: 1.5em;font-family: Microsoft YaHei;font-weight:bolder;color:#5e5e5e}
+.content{font-size: 1.1em;font-family:Microsoft YaHei;color:#424242;text-indent:2em;text-align: left;line-height:2.2em;padding-left: 0.8em;padding-right: 0.8em}
+.foot{padding-top:5%;height:3.5em;background:#e8e8e8;font-size: 1em;font-family:Microsoft YaHei;color:#979797}
+</style>
+<script type="text/javascript">
+function isWechatBrowser(){
+	var ua = navigator.userAgent.toLowerCase();
+	if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		return true;
+ 	} else {
+		return false;
+	}
+}
+function checkAndSkip(){
+	if(isWechatBrowser()==true){
+		alert("微信用户请点击右上角“在浏览器中打开”再下载^_^");
+	}else{
+		var a = document.getElementById("download");
+		a.href="http://183.63.133.193:8010/ykdoctor/yk_doctor.apk";
+		a.setAttribute("onclick",'');
+		a.click();
+	}
+}
+</script>
+<title>翼医生V1.0Beta版（安卓）下载</title>
+</head>
+<body>
+<div class="bg">
+<img alt="" src="img/head.jpg">
+<br/><br/>
+<a id="download" href="javascript:void(0);" onclick="checkAndSkip()"><img alt="点击下载" src="img/download.png" width="90%"></a>
+<br/><br/><br/><hr/><br/>
+<p class="title">认证后奖励</p>
+<img alt="" src="img/reword.jpg">
+<br/><br/><br/><hr/><br/>
+<p class="title">翼医生简介</p>
+<p class="content">翼医生旨在利用医生碎片时间，采用便捷的互联网方式为患者提供服务（咨询和就诊服务），
+从而增加收入和树立品牌。同步为医生和患者提供新型的医患互动沟通渠道，叠加大数据分析系统，辅助诊疗降低误诊率。
+进一步建立医生之间的学术交流学习平台，提高个人专业水平。</p>
+<br/><br/><hr/><br/>
+<p class="title">翼医生功能</p>
+<img alt="" src="img/function.jpg">
+<br/><br/>
+<div class="foot">Copyright© 2015-2016<br/>中国电信·广州云康信息科技有限公司 版权所有</div>
+</div>
+</body>
+</html>
