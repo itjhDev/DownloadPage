@@ -1,0 +1,2 @@
+# DownloadPage
+简单的应用下载静态页面，利用javascript判断是否是微信内置浏览器
